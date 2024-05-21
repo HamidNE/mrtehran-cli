@@ -1,8 +1,10 @@
 import {Args, Command, Flags} from '@oclif/core'
-import {downloadAlbumSongs, downloadPlaylistSongs} from "mrtehran";
+import {downloadPlaylistSongs} from "mrtehran";
 import {join} from "node:path";
 
 export default class PlaylistDownload extends Command {
+  static aliases = ['playlist:download'];
+
   static override args = {
     id: Args.string({
       description: 'id to read',

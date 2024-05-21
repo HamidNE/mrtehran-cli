@@ -31,6 +31,8 @@ USAGE
 <!-- commands -->
 * [`mrtehran album download ID`](#mrtehran-album-download-id)
 * [`mrtehran album info [FILE]`](#mrtehran-album-info-file)
+* [`mrtehran artist download last ID`](#mrtehran-artist-download-last-id)
+* [`mrtehran artist download top ID`](#mrtehran-artist-download-top-id)
 * [`mrtehran help [COMMAND]`](#mrtehran-help-command)
 * [`mrtehran playlist download ID`](#mrtehran-playlist-download-id)
 * [`mrtehran plugins`](#mrtehran-plugins)
@@ -95,6 +97,54 @@ EXAMPLES
 
 _See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/info.ts)_
 
+## `mrtehran artist download last ID`
+
+describe the command here
+
+```
+USAGE
+  $ mrtehran artist download last ID [-f] [-n <value>]
+
+ARGUMENTS
+  ID  id to read
+
+FLAGS
+  -f, --force
+  -n, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to print
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ mrtehran artist download last
+```
+
+_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/artist/download/last.ts)_
+
+## `mrtehran artist download top ID`
+
+describe the command here
+
+```
+USAGE
+  $ mrtehran artist download top ID [-f] [-n <value>]
+
+ARGUMENTS
+  ID  id to read
+
+FLAGS
+  -f, --force
+  -n, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to print
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ mrtehran artist download top
+```
+
+_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/artist/download/top.ts)_
+
 ## `mrtehran help [COMMAND]`
 
 Display help for mrtehran.
@@ -132,6 +182,9 @@ FLAGS
 
 DESCRIPTION
   describe the command here
+
+ALIASES
+  $ mrtehran playlist download
 
 EXAMPLES
   $ mrtehran playlist download
