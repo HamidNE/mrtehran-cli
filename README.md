@@ -29,9 +29,10 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`mrtehran album download [ID]`](#mrtehran-album-download-id)
+* [`mrtehran album download ID`](#mrtehran-album-download-id)
 * [`mrtehran album info [FILE]`](#mrtehran-album-info-file)
 * [`mrtehran help [COMMAND]`](#mrtehran-help-command)
+* [`mrtehran playlist download ID`](#mrtehran-playlist-download-id)
 * [`mrtehran plugins`](#mrtehran-plugins)
 * [`mrtehran plugins add PLUGIN`](#mrtehran-plugins-add-plugin)
 * [`mrtehran plugins:inspect PLUGIN...`](#mrtehran-pluginsinspect-plugin)
@@ -43,23 +44,26 @@ USAGE
 * [`mrtehran plugins unlink [PLUGIN]`](#mrtehran-plugins-unlink-plugin)
 * [`mrtehran plugins update`](#mrtehran-plugins-update)
 
-## `mrtehran album download [ID]`
+## `mrtehran album download ID`
 
 describe the command here
 
 ```
 USAGE
-  $ mrtehran album download [ID] [-f] [-p <value>]
+  $ mrtehran album download ID [-f] [-p <value>]
 
 ARGUMENTS
   ID  album id
 
 FLAGS
   -f, --force
-  -p, --path=<value>
+  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli]
 
 DESCRIPTION
   describe the command here
+
+ALIASES
+  $ mrtehran album download
 
 EXAMPLES
   $ mrtehran album download
@@ -110,6 +114,30 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.22/src/commands/help.ts)_
+
+## `mrtehran playlist download ID`
+
+describe the command here
+
+```
+USAGE
+  $ mrtehran playlist download ID [-f] [-p <value>]
+
+ARGUMENTS
+  ID  id to read
+
+FLAGS
+  -f, --force
+  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli]
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ mrtehran playlist download
+```
+
+_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/playlist/download.ts)_
 
 ## `mrtehran plugins`
 
