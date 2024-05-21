@@ -29,8 +29,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`mrtehran hello PERSON`](#mrtehran-hello-person)
-* [`mrtehran hello world`](#mrtehran-hello-world)
+* [`mrtehran album download [ID]`](#mrtehran-album-download-id)
+* [`mrtehran album info [FILE]`](#mrtehran-album-info-file)
 * [`mrtehran help [COMMAND]`](#mrtehran-help-command)
 * [`mrtehran plugins`](#mrtehran-plugins)
 * [`mrtehran plugins add PLUGIN`](#mrtehran-plugins-add-plugin)
@@ -43,47 +43,53 @@ USAGE
 * [`mrtehran plugins unlink [PLUGIN]`](#mrtehran-plugins-unlink-plugin)
 * [`mrtehran plugins update`](#mrtehran-plugins-update)
 
-## `mrtehran hello PERSON`
+## `mrtehran album download [ID]`
 
-Say hello
+describe the command here
 
 ```
 USAGE
-  $ mrtehran hello PERSON -f <value>
+  $ mrtehran album download [ID] [-f] [-p <value>]
 
 ARGUMENTS
-  PERSON  Person to say hello to
+  ID  album id
 
 FLAGS
-  -f, --from=<value>  (required) Who is saying hello
+  -f, --force
+  -p, --path=<value>
 
 DESCRIPTION
-  Say hello
+  describe the command here
 
 EXAMPLES
-  $ mrtehran hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
+  $ mrtehran album download
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/hello/index.ts)_
+_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/download.ts)_
 
-## `mrtehran hello world`
+## `mrtehran album info [FILE]`
 
-Say hello world
+describe the command here
 
 ```
 USAGE
-  $ mrtehran hello world
+  $ mrtehran album info [FILE] [-f] [-n <value>]
+
+ARGUMENTS
+  FILE  file to read
+
+FLAGS
+  -f, --force
+  -n, --name=<value>  name to print
 
 DESCRIPTION
-  Say hello world
+  describe the command here
 
 EXAMPLES
-  $ mrtehran hello world
-  hello world! (./src/commands/hello/world.ts)
+  $ mrtehran album info
 ```
 
-_See code: [src/commands/hello/world.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/hello/world.ts)_
+_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/info.ts)_
 
 ## `mrtehran help [COMMAND]`
 
