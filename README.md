@@ -30,7 +30,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`mrtehran album download ID`](#mrtehran-album-download-id)
-* [`mrtehran album info [FILE]`](#mrtehran-album-info-file)
+* [`mrtehran album info ID`](#mrtehran-album-info-id)
 * [`mrtehran artist download last ID`](#mrtehran-artist-download-last-id)
 * [`mrtehran artist download top ID`](#mrtehran-artist-download-top-id)
 * [`mrtehran help [COMMAND]`](#mrtehran-help-command)
@@ -52,95 +52,91 @@ download album songs
 
 ```
 USAGE
-  $ mrtehran album download ID [-f] [-p <value>]
+  $ mrtehran album download ID [-p <value>]
 
 ARGUMENTS
   ID  album id
 
 FLAGS
-  -f, --force
   -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
 
 DESCRIPTION
   download album songs
 
-ALIASES
-  $ mrtehran album download
-
 EXAMPLES
-  $ mrtehran album download
+  $ mrtehran album download m8RWXp05rY1j2Be2N7jqGk
+
+  $ mrtehran album download m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
 _See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/download.ts)_
 
-## `mrtehran album info [FILE]`
+## `mrtehran album info ID`
 
-describe the command here
+get album info
 
 ```
 USAGE
-  $ mrtehran album info [FILE] [-f] [-n <value>]
+  $ mrtehran album info ID
 
 ARGUMENTS
-  FILE  file to read
-
-FLAGS
-  -f, --force
-  -n, --name=<value>  name to print
+  ID  album id
 
 DESCRIPTION
-  describe the command here
+  get album info
 
 EXAMPLES
-  $ mrtehran album info
+  $ mrtehran album info m8RWXp05rY1j2Be2N7jqGk
 ```
 
 _See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/info.ts)_
 
 ## `mrtehran artist download last ID`
 
-describe the command here
+get last songs of artist
 
 ```
 USAGE
-  $ mrtehran artist download last ID [-f] [-n <value>]
+  $ mrtehran artist download last ID [-p <value>]
 
 ARGUMENTS
-  ID  id to read
+  ID  album id
 
 FLAGS
-  -f, --force
-  -n, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to print
+  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
 
 DESCRIPTION
-  describe the command here
+  get last songs of artist
 
 EXAMPLES
-  $ mrtehran artist download last
+  $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk
+
+  $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
 _See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/artist/download/last.ts)_
 
 ## `mrtehran artist download top ID`
 
-describe the command here
+get top songs of artist
 
 ```
 USAGE
-  $ mrtehran artist download top ID [-f] [-n <value>]
+  $ mrtehran artist download top ID [-p <value>]
 
 ARGUMENTS
-  ID  id to read
+  ID  album id
 
 FLAGS
-  -f, --force
-  -n, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to print
+  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
 
 DESCRIPTION
-  describe the command here
+  get top songs of artist
 
 EXAMPLES
-  $ mrtehran artist download top
+  $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk
+
+  $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
 _See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/artist/download/top.ts)_
@@ -167,27 +163,25 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.2
 
 ## `mrtehran playlist download ID`
 
-describe the command here
+download playlist songs
 
 ```
 USAGE
-  $ mrtehran playlist download ID [-f] [-p <value>]
+  $ mrtehran playlist download ID [-p <value>]
 
 ARGUMENTS
-  ID  id to read
+  ID  album id
 
 FLAGS
-  -f, --force
-  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli]
+  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
 
 DESCRIPTION
-  describe the command here
-
-ALIASES
-  $ mrtehran playlist download
+  download playlist songs
 
 EXAMPLES
-  $ mrtehran playlist download
+  $ mrtehran playlist download m8RWXp05rY1j2Be2N7jqGk
+
+  $ mrtehran playlist download m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
 _See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/playlist/download.ts)_

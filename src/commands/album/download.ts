@@ -3,14 +3,8 @@ import {downloadAlbumSongs} from "mrtehran";
 import {join} from "node:path";
 
 export default class AlbumDownload extends Command {
-  static aliases = ['album:download'];
-
   static override args = {
-    id: Args.string({
-      description: 'album id',
-      name: 'ID',
-      required: true
-    }),
+    id: Args.string({description: 'album id', name: 'ID', required: true}),
   }
 
   static override description = 'download album songs'
