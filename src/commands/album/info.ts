@@ -1,30 +1,19 @@
-import {Args, Command, Flags} from '@oclif/core'
+import {Args, Command} from '@oclif/core'
 
 export default class AlbumInfo extends Command {
   static override args = {
-    file: Args.string({description: 'file to read'}),
+    id: Args.string({description: 'album id', name: 'ID', required: true}),
   }
 
-  static override description = 'describe the command here'
+  static override description = 'get album info'
 
   static override examples = [
-    '<%= config.bin %> <%= command.id %>',
+    '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk',
   ]
 
-  static override flags = {
-    // flag with no value (-f, --force)
-    force: Flags.boolean({char: 'f'}),
-    // flag with a value (-n, --name=VALUE)
-    name: Flags.string({char: 'n', description: 'name to print'}),
-  }
-
   public async run(): Promise<void> {
-    const {args, flags} = await this.parse(AlbumInfo)
+    const {args} = await this.parse(AlbumInfo)
 
-    const name = flags.name ?? 'world'
-    this.log(`hello ${name} from /Users/hamid/Code/Personal/mrtehran-cli/src/commands/album/info.ts`)
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
-    }
+    console.log(args.id)
   }
 }

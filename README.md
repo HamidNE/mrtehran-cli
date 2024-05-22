@@ -48,7 +48,7 @@ USAGE
 
 ## `mrtehran album download ID`
 
-describe the command here
+download album songs
 
 ```
 USAGE
@@ -59,10 +59,10 @@ ARGUMENTS
 
 FLAGS
   -f, --force
-  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli]
+  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
 
 DESCRIPTION
-  describe the command here
+  download album songs
 
 ALIASES
   $ mrtehran album download
