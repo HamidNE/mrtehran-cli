@@ -1,12 +1,12 @@
 {
   "name": "mrtehran-cli",
   "description": "A new CLI generated with oclif",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "HamidNE",
   "bin": {
     "mrtehran": "./bin/run.js"
   },
-  "bugs": "https://github.com/https://github.com/HamidNE/mrtehran-cli/issues",
+  "bugs": "https://github.com/HamidNE/mrtehran-cli/issues",
   "dependencies": {
     "@oclif/core": "^3",
     "@oclif/plugin-help": "^6",
@@ -38,7 +38,7 @@
     "/dist",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/https://github.com/HamidNE/mrtehran-cli",
+  "homepage": "https://github.com/HamidNE/mrtehran-cli",
   "keywords": [
     "oclif"
   ],
