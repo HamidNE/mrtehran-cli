@@ -1,6 +1,8 @@
 import {Args, Command, Flags} from '@oclif/core'
-import {downloadArtistTopSongs} from "mrtehran";
+import {artistTopSongs} from "mrtehran";
 import {join} from "node:path";
+
+import {downloadSongs} from "../../../utils/download.js";
 
 export default class ArtistDownloadTop extends Command {
   static override args = {
@@ -21,6 +23,7 @@ export default class ArtistDownloadTop extends Command {
   public async run(): Promise<void> {
     const {args, flags} = await this.parse(ArtistDownloadTop)
 
-    await downloadArtistTopSongs(args.id, join(flags.path, args.id));
+    const res = await artistTopSongs(args.id);
+    await downloadSongs(res, join(flags.path, args.id));
   }
 }

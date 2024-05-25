@@ -1,4 +1,5 @@
 import {Args, Command} from '@oclif/core'
+import {albumInfo} from "mrtehran";
 
 export default class AlbumInfo extends Command {
   static override args = {
@@ -14,6 +15,6 @@ export default class AlbumInfo extends Command {
   public async run(): Promise<void> {
     const {args} = await this.parse(AlbumInfo)
 
-    console.log(args.id)
+    console.log(await albumInfo(args.id))
   }
 }

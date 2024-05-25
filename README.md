@@ -20,7 +20,7 @@ $ npm install -g mrtehran-cli
 $ mrtehran COMMAND
 running command...
 $ mrtehran (--version)
-mrtehran-cli/0.0.0 darwin-arm64 node-v20.12.2
+mrtehran-cli/0.1.0 darwin-arm64 node-v20.12.2
 $ mrtehran --help [COMMAND]
 USAGE
   $ mrtehran COMMAND
@@ -69,7 +69,7 @@ EXAMPLES
   $ mrtehran album download m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/download.ts)_
+_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.1.0/src/commands/album/download.ts)_
 
 ## `mrtehran album info ID`
 
@@ -89,7 +89,7 @@ EXAMPLES
   $ mrtehran album info m8RWXp05rY1j2Be2N7jqGk
 ```
 
-_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/album/info.ts)_
+_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.1.0/src/commands/album/info.ts)_
 
 ## `mrtehran artist download last ID`
 
@@ -114,7 +114,7 @@ EXAMPLES
   $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/artist/download/last.ts)_
+_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.1.0/src/commands/artist/download/last.ts)_
 
 ## `mrtehran artist download top ID`
 
@@ -139,7 +139,7 @@ EXAMPLES
   $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/artist/download/top.ts)_
+_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.1.0/src/commands/artist/download/top.ts)_
 
 ## `mrtehran help [COMMAND]`
 
@@ -184,7 +184,7 @@ EXAMPLES
   $ mrtehran playlist download m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.0.0/src/commands/playlist/download.ts)_
+_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.1.0/src/commands/playlist/download.ts)_
 
 ## `mrtehran plugins`
 
