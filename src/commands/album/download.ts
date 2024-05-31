@@ -17,7 +17,12 @@ export default class AlbumDownload extends Command {
   ]
 
   static override flags = {
-    path: Flags.string({char: 'p', default: process.cwd(), defaultHelp: 'current directory', description: 'path to save songs'}),
+    path: Flags.string({
+      char: 'p',
+      default: process.cwd(),
+      defaultHelp: 'current directory',
+      description: 'path to save songs'
+    }),
   }
 
   public async run(): Promise<void> {
