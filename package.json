@@ -1,7 +1,7 @@
 {
   "name": "mrtehran-cli",
   "description": "Nodejs MrTehran CLI",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "HamidNE",
   "bin": {
     "mrtehran": "./bin/run.js"
