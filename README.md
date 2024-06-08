@@ -20,7 +20,7 @@ $ npm install -g mrtehran-cli
 $ mrtehran COMMAND
 running command...
 $ mrtehran (--version)
-mrtehran-cli/0.2.0 darwin-arm64 node-v20.12.2
+mrtehran-cli/0.3.1 darwin-arm64 node-v20.12.2
 $ mrtehran --help [COMMAND]
 USAGE
   $ mrtehran COMMAND
@@ -48,7 +48,7 @@ ARGUMENTS
   ID  album id
 
 FLAGS
-  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
+  -p, --path=<value>  [default: Current Directory] path to save songs
 
 DESCRIPTION
   download album songs
@@ -61,7 +61,7 @@ EXAMPLES
   $ mrtehran album download BG8EKNqgARP1wlzv0QVjob -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/album/download.ts)_
+_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/album/download.ts)_
 
 ## `mrtehran album info ID`
 
@@ -83,7 +83,7 @@ EXAMPLES
   $ mrtehran album info BG8EKNqgARP1wlzv0QVjob
 ```
 
-_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/album/info.ts)_
+_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/album/info.ts)_
 
 ## `mrtehran artist download last ID`
 
@@ -97,7 +97,7 @@ ARGUMENTS
   ID  album id
 
 FLAGS
-  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
+  -p, --path=<value>  [default: Current Directory] path to save songs
 
 DESCRIPTION
   get last songs of artist
@@ -110,7 +110,7 @@ EXAMPLES
   $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/artist/download/last.ts)_
+_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/artist/download/last.ts)_
 
 ## `mrtehran artist download top ID`
 
@@ -124,7 +124,7 @@ ARGUMENTS
   ID  album id
 
 FLAGS
-  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
+  -p, --path=<value>  [default: Current Directory] path to save songs
 
 DESCRIPTION
   get top songs of artist
@@ -137,7 +137,7 @@ EXAMPLES
   $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/artist/download/top.ts)_
+_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/artist/download/top.ts)_
 
 ## `mrtehran help [COMMAND]`
 
@@ -171,7 +171,7 @@ ARGUMENTS
   ID  album id
 
 FLAGS
-  -p, --path=<value>  [default: /Users/hamid/Code/Personal/mrtehran-cli] path to save songs
+  -p, --path=<value>  [default: Current Directory] path to save songs
 
 DESCRIPTION
   download playlist songs
@@ -184,5 +184,5 @@ EXAMPLES
   $ mrtehran playlist download N6rLGdYP8yM2mR8v3QKJo9 -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/playlist/download.ts)_
+_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/playlist/download.ts)_
 <!-- commandsstop -->
