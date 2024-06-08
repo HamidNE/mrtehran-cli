@@ -12,12 +12,18 @@ export default class ArtistDownloadTop extends Command {
   static override description = 'get top songs of artist';
 
   static override examples = [
+    '// https://mrtehran.app/artist/m8RWXp05rY1j2Be2N7jqGk ',
     '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk',
     '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/',
   ]
 
   static override flags = {
-    path: Flags.string({char: 'p', default: process.cwd(), description: 'path to save songs'}),
+    path: Flags.string({
+      char: 'p',
+      default: process.cwd(),
+      defaultHelp: 'defaultHelp',
+      description: 'path to save songs'
+    }),
   }
 
   public async run(): Promise<void> {

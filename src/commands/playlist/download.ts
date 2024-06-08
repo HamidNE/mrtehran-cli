@@ -12,8 +12,9 @@ export default class PlaylistDownload extends Command {
   static override description = 'download playlist songs'
 
   static override examples = [
-    '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk',
-    '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/',
+    '// https://mrtehran.app/playlist/N6rLGdYP8yM2mR8v3QKJo9',
+    '<%= config.bin %> <%= command.id %> N6rLGdYP8yM2mR8v3QKJo9',
+    '<%= config.bin %> <%= command.id %> N6rLGdYP8yM2mR8v3QKJo9 -p ~/Music/Albums/',
   ]
 
   static override flags = {

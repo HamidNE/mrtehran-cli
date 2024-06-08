@@ -12,6 +12,7 @@ export default class ArtistDownloadLast extends Command {
   static override description = 'get last songs of artist'
 
   static override examples = [
+    '// https://mrtehran.app/artist/m8RWXp05rY1j2Be2N7jqGk ',
     '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk',
     '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/',
   ]

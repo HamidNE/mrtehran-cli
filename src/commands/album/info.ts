@@ -9,7 +9,8 @@ export default class AlbumInfo extends Command {
   static override description = 'get album info'
 
   static override examples = [
-    '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk',
+    '// https://mrtehran.app/album/BG8EKNqgARP1wlzv0QVjob',
+    '<%= config.bin %> <%= command.id %> BG8EKNqgARP1wlzv0QVjob',
   ]
 
   public async run(): Promise<void> {

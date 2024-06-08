@@ -54,9 +54,11 @@ DESCRIPTION
   download album songs
 
 EXAMPLES
-  $ mrtehran album download m8RWXp05rY1j2Be2N7jqGk
+  // https://mrtehran.app/album/BG8EKNqgARP1wlzv0QVjob
 
-  $ mrtehran album download m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
+  $ mrtehran album download BG8EKNqgARP1wlzv0QVjob
+
+  $ mrtehran album download BG8EKNqgARP1wlzv0QVjob -p ~/Music/Albums/
 ```
 
 _See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/album/download.ts)_
@@ -76,7 +78,9 @@ DESCRIPTION
   get album info
 
 EXAMPLES
-  $ mrtehran album info m8RWXp05rY1j2Be2N7jqGk
+  // https://mrtehran.app/album/BG8EKNqgARP1wlzv0QVjob
+
+  $ mrtehran album info BG8EKNqgARP1wlzv0QVjob
 ```
 
 _See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/album/info.ts)_
@@ -99,6 +103,8 @@ DESCRIPTION
   get last songs of artist
 
 EXAMPLES
+  // https://mrtehran.app/artist/m8RWXp05rY1j2Be2N7jqGk 
+
   $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk
 
   $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
@@ -124,6 +130,8 @@ DESCRIPTION
   get top songs of artist
 
 EXAMPLES
+  // https://mrtehran.app/artist/m8RWXp05rY1j2Be2N7jqGk 
+
   $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk
 
   $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
@@ -169,9 +177,11 @@ DESCRIPTION
   download playlist songs
 
 EXAMPLES
-  $ mrtehran playlist download m8RWXp05rY1j2Be2N7jqGk
+  // https://mrtehran.app/playlist/N6rLGdYP8yM2mR8v3QKJo9
 
-  $ mrtehran playlist download m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
+  $ mrtehran playlist download N6rLGdYP8yM2mR8v3QKJo9
+
+  $ mrtehran playlist download N6rLGdYP8yM2mR8v3QKJo9 -p ~/Music/Albums/
 ```
 
 _See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.2.0/src/commands/playlist/download.ts)_

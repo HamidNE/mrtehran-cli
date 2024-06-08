@@ -12,8 +12,9 @@ export default class AlbumDownload extends Command {
   static override description = 'download album songs'
 
   static override examples = [
-    '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk',
-    '<%= config.bin %> <%= command.id %> m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/',
+    '// https://mrtehran.app/album/BG8EKNqgARP1wlzv0QVjob',
+    '<%= config.bin %> <%= command.id %> BG8EKNqgARP1wlzv0QVjob',
+    '<%= config.bin %> <%= command.id %> BG8EKNqgARP1wlzv0QVjob -p ~/Music/Albums/',
   ]
 
   static override flags = {
