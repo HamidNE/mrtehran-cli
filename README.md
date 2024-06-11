@@ -20,7 +20,7 @@ $ npm install -g mrtehran-cli
 $ mrtehran COMMAND
 running command...
 $ mrtehran (--version)
-mrtehran-cli/0.3.1 darwin-arm64 node-v20.12.2
+mrtehran-cli/0.4.0 darwin-arm64 node-v20.12.2
 $ mrtehran --help [COMMAND]
 USAGE
   $ mrtehran COMMAND
@@ -33,8 +33,10 @@ USAGE
 * [`mrtehran album info ID`](#mrtehran-album-info-id)
 * [`mrtehran artist download last ID`](#mrtehran-artist-download-last-id)
 * [`mrtehran artist download top ID`](#mrtehran-artist-download-top-id)
+* [`mrtehran artist info ID`](#mrtehran-artist-info-id)
 * [`mrtehran help [COMMAND]`](#mrtehran-help-command)
 * [`mrtehran playlist download ID`](#mrtehran-playlist-download-id)
+* [`mrtehran playlist info ID`](#mrtehran-playlist-info-id)
 
 ## `mrtehran album download ID`
 
@@ -61,7 +63,7 @@ EXAMPLES
   $ mrtehran album download BG8EKNqgARP1wlzv0QVjob -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/album/download.ts)_
+_See code: [src/commands/album/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/album/download.ts)_
 
 ## `mrtehran album info ID`
 
@@ -83,7 +85,7 @@ EXAMPLES
   $ mrtehran album info BG8EKNqgARP1wlzv0QVjob
 ```
 
-_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/album/info.ts)_
+_See code: [src/commands/album/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/album/info.ts)_
 
 ## `mrtehran artist download last ID`
 
@@ -110,7 +112,7 @@ EXAMPLES
   $ mrtehran artist download last m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/artist/download/last.ts)_
+_See code: [src/commands/artist/download/last.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/artist/download/last.ts)_
 
 ## `mrtehran artist download top ID`
 
@@ -137,7 +139,29 @@ EXAMPLES
   $ mrtehran artist download top m8RWXp05rY1j2Be2N7jqGk -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/artist/download/top.ts)_
+_See code: [src/commands/artist/download/top.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/artist/download/top.ts)_
+
+## `mrtehran artist info ID`
+
+get artist info
+
+```
+USAGE
+  $ mrtehran artist info ID
+
+ARGUMENTS
+  ID  artist id
+
+DESCRIPTION
+  get artist info
+
+EXAMPLES
+  // https://mrtehran.app/artist/m8RWXp05rY1j2Be2N7jqGk 
+
+  $ mrtehran artist info m8RWXp05rY1j2Be2N7jqGk
+```
+
+_See code: [src/commands/artist/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/artist/info.ts)_
 
 ## `mrtehran help [COMMAND]`
 
@@ -184,5 +208,27 @@ EXAMPLES
   $ mrtehran playlist download N6rLGdYP8yM2mR8v3QKJo9 -p ~/Music/Albums/
 ```
 
-_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.3.1/src/commands/playlist/download.ts)_
+_See code: [src/commands/playlist/download.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/playlist/download.ts)_
+
+## `mrtehran playlist info ID`
+
+get playlist info
+
+```
+USAGE
+  $ mrtehran playlist info ID
+
+ARGUMENTS
+  ID  playlist id
+
+DESCRIPTION
+  get playlist info
+
+EXAMPLES
+  // https://mrtehran.app/playlist/N6rLGdYP8yM2mR8v3QKJo9
+
+  $ mrtehran playlist info N6rLGdYP8yM2mR8v3QKJo9
+```
+
+_See code: [src/commands/playlist/info.ts](https://github.com/HamidNE/mrtehran-cli/blob/v0.4.0/src/commands/playlist/info.ts)_
 <!-- commandsstop -->

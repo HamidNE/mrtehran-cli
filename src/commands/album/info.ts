@@ -16,6 +16,6 @@ export default class AlbumInfo extends Command {
   public async run(): Promise<void> {
     const {args} = await this.parse(AlbumInfo)
 
-    console.log(await albumInfo(args.id))
+    console.table(await albumInfo(args.id))
   }
 }
