@@ -1,7 +1,7 @@
 {
   "name": "mrtehran-cli",
-  "description": "Nodejs MrTehran CLI",
-  "version": "0.4.0",
+  "description": "MrTehran CLI application",
+  "version": "0.4.1",
   "author": "HamidNE",
   "bin": {
     "mrtehran": "./bin/run.js"
@@ -53,12 +53,7 @@
     "plugins": [
       "@oclif/plugin-help"
     ],
-    "topicSeparator": " ",
-    "topics": {
-      "hello": {
-        "description": "Say hello to the world and others"
-      }
-    }
+    "topicSeparator": " "
   },
   "repository": "https://github.com/HamidNE/mrtehran-cli",
   "scripts": {

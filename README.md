@@ -1,7 +1,7 @@
 mrtehran-cli
 =================
 
-A new CLI generated with oclif
+MrTehran CLI application
 
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
